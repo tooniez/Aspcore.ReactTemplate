@@ -1,0 +1,47 @@
+{
+  "name": "Aspnet.React",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "framer-motion": "^6.3.16",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.34",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "cross-env": "^7.0.3",
+    "openapi-typescript-codegen": "^0.22.0",
+    "sass": "^1.51.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9",
+    "vite-plugin-pwa": "^0.12.0",
+    "workbox-build": "^6.5.3",
+    "workbox-core": "^6.5.3",
+    "workbox-precaching": "^6.5.3",
+    "workbox-routing": "^6.5.3",
+    "workbox-strategies": "^6.5.3"
+  },
+  "scripts": {
+    "prestart": "node aspnetcore-https && node aspnetcore-react",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "openapi": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 openapi -i https://localhost:7193/swagger/v1/swagger.json -o src/api"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
