@@ -17,7 +17,7 @@
     "openapi-typescript-codegen": "^0.22.0",
     "sass": "^1.51.0",
     "typescript": "^4.6.3",
-    "vite": "^6.3.4",
+    "vite": "^6.3.6",
     "vite-plugin-pwa": "^0.21.1",
     "workbox-build": "^6.5.3",
     "workbox-core": "^6.5.3",
